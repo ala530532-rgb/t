@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/BUTTONS/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة</title>
+    
+<script src="./دعوة_files/th.js.تنزيل"></script>
+<script src="./دعوة_files/home.js.تنزيل"></script>
+    <audio id="weddingMusic" src="music.mp3" preload="auto"></audio>
+
+
+
+
+
+<link rel="stylesheet" href="./دعوة_files/home.css"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="./دعوة_files/css2" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="./دعوة_files/css2(1)" rel="stylesheet"></head>
+<body> 
+
+<div class="content">
+
+    <div class="one">
+        <p class="a">اضغط القرص الموسيقي</p>
+<img src="./دعوة_files/open.PNG" class="open">
+<img src="./دعوة_files/music.PNG" class="music">
+<img src="./دعوة_files/darf.PNG" class="darf">
+<img src="./دعوة_files/bocket.PNG" class="bocket">
+<img src="./دعوة_files/gold.PNG" class="gold">
+    </div>
+
+
+    <div class="too">
+<img src="./دعوة_files/poster.PNG" class="poster">
+<p class="b">حين تتزين ليلة العمر بأحبابنا, يحلو اللقاء وتكتمل الفرحة. يسعدنا حضوركم ومشاركتنا هذه الليلة المميزة لتكونوا معنا في بداية رحلتنا الجديدة, فوجودكم بيننا هو أجمل هدية تزيد هذه المناسبة سعادة وبهجة.</p>
+<img src="./دعوة_files/flo.PNG" class="flo">
+
+<div class="countdown-container">
+  <div class="time-box">
+    <span id="days">89</span>
+    <p>يوم</p>
+  </div>
+  <div class="time-box">
+    <span id="hours">21</span>
+    <p>ساعة</p>
+</div>
+<div class="time-box">
+    <span id="minutes">11</span>
+    <p>دقيقة</p>
+ </div>
+<div class="time-box">
+    <span id="seconds">24</span>
+    <p>ثانية</p>
+    </div>
+</div>
+    </div>
+
+
+    <div class="three">
+<div class="hdor">
+    </div>
+    <input type="text" id="guestName" placeholder="الاسم الكريم" class="name">
+<input type="text" id="guestMessage" placeholder="اكتبي رسالة لطيفة" class="name-tow">
+<p class="gh">هل تؤكدين حضورك؟</p>
+    <select id="attendanceSelect" class="c">
+    <option value="أؤكد الحضور">أؤكد الحضور</option>
+    <option value="أعتذر عن الحضور">أعتذر عن الحضور</option>
+</select>
+<button type="button" onclick="submitRSVP()">إرسال</button>
+</div>
+<img src="./دعوة_files/date.png" class="date">
+<img src="./دعوة_files/golden.PNG" class="golden">
+    </div>
+
+
+    <div class="four">
+<p class="dor">الباب يؤدي لموقع القاعة</p>
+<img src="./دعوة_files/door.PNG" alt="باب القاعة" usemap="#door" width="290" class="door">
+<map name="door">
+    <area target="_blank" alt="موقع القاعة" title="اضغط للوصول للقاعة" href="https://maps.app.goo.gl/7cbrK6A2VD175eXN9" coords="460,34,463,20,550,22,561,36,615,46,656,60,701,84,745,111,788,145,824,183,862,228,880,263,897,302,910,343,918,376,927,404,930,423,1002,433,1004,444,988,469,987,483,976,507,981,516,975,525,975,546,960,563,954,1313,960,1320,957,1340,970,1358,970,1414,979,1414,1002,1430,1001,1460,990,1463,20,1463,20,1430,49,1415,50,1361,62,1340,61,560,46,548,47,528,38,521,41,492,32,488,32,474,11,442,10,429,91,429,98,364,121,298,144,248,181,188,231,134,281,98,321,75,371,54,413,42" shape="poly">
+</map>
+    </div>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

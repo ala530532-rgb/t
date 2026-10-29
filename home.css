@@ -1,0 +1,508 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url('new.webp');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: repeat-y;
+}
+
+
+.intro-blur {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background: rgba(245, 241, 232, 0.25);
+    animation: introReveal 2.5s ease forwards;
+}
+
+.intro-initials {
+    color: #b08a43;
+    font-family: "Aref Ruqaa", serif;
+    font-size: 4rem;
+    text-shadow: 0 0 12px rgba(176, 138, 67, 0.35);
+    animation: initialsReveal 2.5s ease forwards;
+}
+
+@keyframes introReveal {
+    0%, 65% {
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        background: rgba(245, 241, 232, 0.35);
+        opacity: 1;
+    }
+    100% {
+        backdrop-filter: blur(0);
+        -webkit-backdrop-filter: blur(0);
+        background: transparent;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes initialsReveal {
+    0%, 45% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+.all {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    overflow: clip;
+}
+
+.one,
+.too,
+.three,
+.four {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin-inline: auto;
+}
+
+.one {
+    display: block;  
+    position: relative;
+    height: 32rem;
+}
+
+.a {
+     font-family: "Aref Ruqaa", serif;
+    font-size: 1rem;
+    margin-top: 4rem;
+text-align: center;
+    color: hsl(234, 49%, 24%);
+}
+
+.music {
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    pointer-events: auto;
+}
+.open {
+    display: block;
+    width: 90%;
+     max-width: 100%;
+ margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0px 0px 10px hsl(233, 62%, 16%));
+}
+.darf {
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    width: 60%;
+ margin-left: auto;
+    margin-right: auto;
+    top: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(0px 0px 9px hsl(233, 62%, 16%));
+}
+.bocket {
+    position: absolute;
+   max-width: 100%;
+   width: 12rem;
+   top: 3rem;
+   left: 0rem;
+}
+.gold {
+    position: absolute;
+    max-width: 100%;
+    width: 3rem;
+     margin-left: auto;
+    margin-right: auto;
+     left: 50%;
+    transform: translateX(-50%);
+    top: 13rem;
+}
+
+
+.too {
+    display: block;  
+     position: relative;
+}
+
+.poster {
+  max-width: 100%;
+  width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+ display: block;
+}
+.b {
+    position: absolute;
+  font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: 13rem;
+    color: #FEFBF0;
+    line-height: 2rem;
+    width: 13rem;
+    font-size: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.flo {
+    position: absolute;
+    top: 31rem;
+    max-width: 100%;
+    width: 23rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  margin-top: 1rem;
+}
+.time-box {
+  color: hsl(234, 49%, 24%);
+  padding: 1.2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.time-box span {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+}
+.time-box p {
+  font-size: 0.9rem;
+  color: hsl(234, 49%, 24%);
+}
+
+
+.three {
+   position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin-inline: auto;
+    min-height: 40rem;
+}
+.date {
+    position: absolute;
+    width: 7rem;
+    max-width: 100%;
+    top: 9rem;
+    left: 3rem;
+}
+.three .hdor {
+    position: absolute;
+    width: 11.4rem;
+    height: 13rem;
+    top: 20rem;
+    right: 1rem;
+    background-color: hsl(233, 62%, 16%);
+    border-radius: 0.5rem;
+}
+.golden {
+    position: absolute;
+    width: 7rem;
+    max-width: 100%;
+    top: 14rem;
+    left: 7.5rem;
+    filter: drop-shadow(0 0 7px hsl(38, 77%, 28%));
+    z-index: 2;
+}
+.name {
+    position: absolute;
+   max-width: 100%;
+   top: 20.4rem;
+   width: 10rem;
+   right: 1.4rem;
+    border-radius: 0.3rem;
+    border: none;
+text-align: right;
+font-size: 1rem;
+font-family: "Aref Ruqaa", serif;
+color: hsl(38, 78%, 33%);
+}
+.name:hover {
+    background-color: hsl(0, 2%, 90%);
+}
+.name-tow:hover {
+    background-color: hsl(0, 2%, 90%);
+}
+.name-tow {
+    position: absolute;
+    top: 22.4rem;
+   max-width: 100%;
+   width: 10rem;
+   right: 1.4rem;
+    border-radius: 0.3rem;
+    border: none;
+font-size: 1rem;
+text-align: right;
+font-family: "Aref Ruqaa", serif;
+color: hsl(38, 78%, 33%);
+}
+.gh {
+    max-width: 100%;
+    position: absolute;
+    top: 24.5rem;
+    right: 1.5rem;
+    color: #FEFBF0;
+    font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: right;
+}
+.c {
+    position: absolute;
+    top: 27.2rem;
+    right: 1.7rem;
+    max-width: 100%;
+    border: none;
+    color: white;
+    background-color: hsl(234, 61%, 16%);
+    box-shadow: 1px 1px 2px hsl(38, 78%, 33%);
+    font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: right;
+}
+
+.attendance-container {
+    display: flex;
+    flex-direction:column;
+    gap: 15px;
+}
+.radio-option input[type="radio"] {
+    display: none;
+}
+.option input[type="radio"] {
+    display: none;
+}
+.radio-option {
+   max-width: 100%;
+border-radius: 5px;
+text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background-color:hsl(234, 49%, 24%);
+color: white;
+font-size: 12px;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+.option {
+  max-width: 100%;
+border-radius: 5px;
+text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background-color:hsl(234, 49%, 24%);
+color: white;
+font-size: 12px;
+padding-bottom: 15px;
+}
+.radio-option:has(input[type="radio"]:checked) {
+background-color:hsl(38, 78%, 33%);
+color: white;
+border-color:blue;
+}
+.option:has(input[type="radio"]:checked) {
+background-color:hsl(38, 78%, 33%);
+color: white;
+border-color:blue;
+}
+ 
+button {
+    position: absolute;
+    top: 29.4rem;
+    right: 3.3rem;
+    max-width: 100%;
+    padding: 0.2rem 2rem;
+border: none;
+border-radius: 0.3rem;
+font-size: 1.2rem;
+background-color:hsl(38, 78%, 33%);
+color: white;
+box-shadow: 0px 1px 15px hsl(38, 78%, 33%);
+}
+button:active {
+    box-shadow: none;
+background-color:hsl(38, 77%, 28%);
+}
+
+
+.four {
+    display: block; 
+    margin: 0 auto;
+    height: auto;  
+}
+
+.dor {
+     color: hsl(234, 49%, 24%);
+      font-family: "Aref Ruqaa", serif;
+    font-size: 1.2rem;
+text-align: center;
+
+}
+.door { 
+    margin-top: 20px;
+    display: block;
+    filter: drop-shadow(0px 0px 13px #9c6c2c);
+    cursor: pointer;
+    width: 70%;
+    max-width: 100%;
+     margin-left: auto;
+    margin-right: auto;
+}
+
+.door:hover {
+    filter: drop-shadow(0px 0px 5px #9c6c2c);
+    transition: 0.5s;
+}
+
+.door:active {
+    filter: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ضبط البوستر على الجوال */
+@media (max-width: 600px) {
+    .b {
+        top: 11rem;
+    }
+
+    .flo {
+        top: 28rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ترتيب عناصر الصندوق الثالث فقط */
+.three {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin-inline: auto;
+    min-height: 40rem;
+}
+
+.three .hdor {
+    position: absolute;
+}
+
+.three .name {
+    position: absolute;
+}
+
+.three .name-tow {
+    position: absolute;
+}
+
+.three .gh {
+    position: absolute;
+}
+
+.three .c {
+    position: absolute;
+}
+
+.three button {
+    position: absolute;
+}
+
+
+
+
+
+/* لمعة ذهبية ناعمة على بطاقة التاريخ */
+.poster {
+    animation: dateShimmer 3s ease-in-out infinite;
+}
+
+@keyframes dateShimmer {
+    0%, 100% {
+        filter: drop-shadow(2 2 6px rgba(212, 175, 55, 0.2))
+                brightness(1);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 9px hsl(38, 78%, 33%))
+                brightness(1.08);
+    }
+}
+
+
+
+.music.is-playing {
+    animation: spinDisc 3s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes spinDisc {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
